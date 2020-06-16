@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-app
 spec:
-  replicas: 2
+  replicas: 4
   selector:
     matchLabels:
       app: hello-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: webapp:1
+        image: webapp:2
         # for local development against minikube registry
         #imagePullPolicy: Never        
         ports:
