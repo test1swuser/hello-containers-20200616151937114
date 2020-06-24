@@ -25,7 +25,7 @@ if (process.env.PORT) {
 
 var app = express();
 app.get('/', function (req, res) {
-  res.send('Welcome to IBM Cloud DevOps using containers. Let\'s go use the Continuous Delivery Service. 10 PODs');
+  res.send('Welcome to IBM Cloud DevOps using containers. Let\'s go use the Continuous Delivery Service. 2 PODs');
 });
 
 app.listen(PORT);
